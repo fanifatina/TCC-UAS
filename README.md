@@ -60,3 +60,69 @@ Aplikasi buku tamu perlu berkomunikasi dengan budak Redis untuk membaca data. Un
    
 2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
    ![00](gambar/p9.PNG)
+   
+
+## Creating the Guestbook Frontend Deployment
+
+1. Terapkan penyebaran frontend dari file frontend-deployment.yaml:
+   ![00](gambar/p10.PNG)
+   
+2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
+   ![00](gambar/p11.PNG)
+
+
+## Creating the Frontend Service
+
+Layanan redis-slave dan redis-master yang Anda terapkan hanya dapat diakses dalam cluster kontainer karena tipe default untuk Layanan adalah ClusterIP.
+ClusterIP memberikan alamat IP tunggal untuk set Pods yang ditunjuk Layanan. Alamat IP ini hanya dapat diakses di dalam cluster.
+Jika Anda ingin para tamu dapat mengakses buku tamu Anda, Anda harus mengonfigurasi Layanan frontend agar dapat dilihat secara eksternal, sehingga klien dapat meminta Layanan dari luar cluster kontainer. Minikube hanya dapat mengekspos Layanan melalui NodePort.
+Catatan: Beberapa penyedia cloud, seperti Google Compute Engine atau Google Kubernetes Engine, mendukung penyeimbang beban eksternal. Jika penyedia cloud Anda mendukung penyeimbang beban dan Anda ingin menggunakannya, cukup hapus atau beri komentar tipe: NodePort, dan tipe tanda komentar: LoadBalancer.
+
+1. Terapkan Layanan frontend dari file frontend-service.yaml:
+   ![00](gambar/p12.PNG)
+   
+2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
+   ![00](gambar/p13.PNG)
+   
+   
+## Viewing the Frontend Service via NodePort
+
+Jika Anda menggunakan aplikasi ini ke Minikube atau cluster lokal, Anda perlu menemukan alamat IP untuk melihat Buku Tamu Anda.
+
+1. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
+   ![00](gambar/p14.PNG)
+   
+   
+## Viewing the Frontend Service via LoadBalancer
+
+Jika Anda menggunakan manifes frontend-service.yaml dengan tipe: LoadBalancer Anda perlu menemukan alamat IP untuk melihat Buku Tamu Anda.
+
+1. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
+   ![00](gambar/p15.PNG)
+   
+   
+## Scale the Web Frontend
+
+Menaikkan atau menurunkan mudah karena server Anda didefinisikan sebagai Layanan yang menggunakan pengendali penyebaran.
+
+1. Jalankan perintah berikut untuk meningkatkan jumlah Pod frontend:
+   ![00](gambar/p16.PNG)
+
+2. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
+   ![00](gambar/p17.PNG)
+   
+3. Jalankan perintah berikut untuk meningkatkan jumlah Pod frontend:
+   ![00](gambar/p18.PNG)
+
+4. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
+   ![00](gambar/p19.PNG)
+   
+
+## Cleaning up
+Menghapus Penyebaran dan Layanan juga menghapus Pod yang berjalan. Gunakan label untuk menghapus banyak sumber daya dengan satu perintah.
+
+1. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
+   ![00](gambar/p20.PNG)
+   
+2. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
+   ![00](gambar/p21.PNG)
