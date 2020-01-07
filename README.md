@@ -1,5 +1,7 @@
 # Deploying PHP Guestbook application dengan Redis
-## Sumber : https://googleweblight.com/i?u=https://kubernetes.io/docs/tutorials/stateless-application/guestbook/&hl=id-ID
+
+Sumber : https://googleweblight.com/i?u=https://kubernetes.io/docs/tutorials/stateless-application/guestbook/&hl=id-ID
+##
 
 Tutorial ini menunjukkan kepada Anda bagaimana membangun dan menggunakan aplikasi web multi-tier yang sederhana menggunakan Kubernetes dan Docker.
 
@@ -48,6 +50,7 @@ Jika tidak ada replika yang berjalan, Penyebaran ini akan memulai dua replika pa
    ![00](gambar/p6.PNG)
    
 2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
+   
    ![00](gambar/p7.PNG)
    
    
@@ -59,6 +62,7 @@ Aplikasi buku tamu perlu berkomunikasi dengan budak Redis untuk membaca data. Un
    ![00](gambar/p8.PNG)
    
 2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
+   
    ![00](gambar/p9.PNG)
    
 
@@ -68,6 +72,7 @@ Aplikasi buku tamu perlu berkomunikasi dengan budak Redis untuk membaca data. Un
    ![00](gambar/p10.PNG)
    
 2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
+   
    ![00](gambar/p11.PNG)
 
 
@@ -106,12 +111,14 @@ Jika Anda menggunakan manifes frontend-service.yaml dengan tipe: LoadBalancer An
 Menaikkan atau menurunkan mudah karena server Anda didefinisikan sebagai Layanan yang menggunakan pengendali penyebaran.
 
 1. Jalankan perintah berikut untuk meningkatkan jumlah Pod frontend:
+   
    ![00](gambar/p16.PNG)
 
 2. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
    ![00](gambar/p17.PNG)
    
 3. Jalankan perintah berikut untuk meningkatkan jumlah Pod frontend:
+   
    ![00](gambar/p18.PNG)
 
 4. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
