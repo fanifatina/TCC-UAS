@@ -38,7 +38,7 @@ Catatan: File manifes ini membuat Layanan bernama redis-master dengan serangkaia
 
 ## Start up the Redis Slaves
 
-Meskipun master Redis adalah pod tunggal, Anda dapat membuatnya sangat tersedia untuk memenuhi permintaan lalu lintas dengan menambahkan replika budak Redis.
+Meskipun master Redis adalah pod tunggal, Anda dapat membuatnya sangat tersedia untuk memenuhi permintaan lalu lintas dengan menambahkan replika Redis Slaves.
 
 
 ## Creating the Redis Slave Deployment
