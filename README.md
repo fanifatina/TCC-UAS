@@ -97,6 +97,9 @@ Jika Anda menggunakan aplikasi ini ke Minikube atau cluster lokal, Anda perlu me
 1. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
    ![00](gambar/p14.PNG)
    
+2. Salin alamat IP, dan muat halaman di browser Anda untuk melihat buku tamu Anda.
+   ![00](gambar/pp1.PNG)
+   
    
 ## Viewing the Frontend Service via LoadBalancer
 
@@ -104,7 +107,8 @@ Jika Anda menggunakan manifes frontend-service.yaml dengan tipe: LoadBalancer An
 
 1. Jalankan perintah berikut untuk mendapatkan alamat IP untuk Layanan frontend. Responsnya harus serupa dengan ini:
    ![00](gambar/p15.PNG)
-   
+
+
    
 ## Scale the Web Frontend
 
