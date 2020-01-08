@@ -29,5 +29,36 @@ Kubernetes Pod adalah grup yang terdiri dari satu atau lebih Kontainer, diikat b
 1. Gunakan perintah kubectl create untuk membuat Deployment yang mengelola Pod. Pod menjalankan Container berdasarkan pada gambar Docker yang disediakan.
    ![00](gambar/5.PNG)
    
-2. Lihat Deployment
+2. Lihat Deployment, hasilnya akan mirip seperti ini :
    ![00](gambar/6.PNG)
+   
+3. Lihat Pod, hasilnya akan mirip seperti ini :
+   ![00](gambar/7.PNG)
+   
+4. Lihat Cluster Events
+   ![00](gambar/8.PNG)
+   
+5. Lihat kubectl
+   ![00](gambar/9.PNG)
+   
+   
+## Membuat Service
+
+1. Paparkan Pod ke internet publik menggunakan perintah kubectl expose:
+   ![00](gambar/10.PNG)
+   
+2. Lihat Layanan yang baru saja Anda buat:
+   ![00](gambar/11.PNG)
+   
+3. Jalankan perintah berikut:
+   ![00](gambar/12.PNG)
+   
+4. Hanya lingkungan Katacoda: Klik tanda plus, lalu klik Pilih port untuk dilihat di Host 1.
+
+5. Hanya lingkungan Katacoda: Perhatikan nomor port 5 digit yang ditampilkan berlawanan dengan 8080 dalam output layanan. Nomor port ini dibuat secara acak dan bisa berbeda untuk Anda. Ketikkan nomor Anda di kotak teks nomor port, lalu klik Display Port. Menggunakan contoh dari sebelumnya, Anda akan mengetikkan 30369.
+   ![00](gambar/13.PNG)
+   
+Ini membuka jendela browser yang melayani aplikasi Anda dan menampilkan pesan "Hello World".
+   ![00](gambar/14.PNG)
+
+
