@@ -50,7 +50,6 @@ Jika tidak ada replika yang berjalan, Penyebaran ini akan memulai dua replika pa
    ![00](gambar/p6.PNG)
    
 2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
-   
    ![00](gambar/p7.PNG)
    
    
@@ -62,7 +61,6 @@ Aplikasi buku tamu perlu berkomunikasi dengan budak Redis untuk membaca data. Un
    ![00](gambar/p8.PNG)
    
 2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
-   
    ![00](gambar/p9.PNG)
    
 
@@ -72,7 +70,6 @@ Aplikasi buku tamu perlu berkomunikasi dengan budak Redis untuk membaca data. Un
    ![00](gambar/p10.PNG)
    
 2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
-   
    ![00](gambar/p11.PNG)
 
 
@@ -87,6 +84,7 @@ Catatan: Beberapa penyedia cloud, seperti Google Compute Engine atau Google Kube
    ![00](gambar/p12.PNG)
    
 2. Permintaan daftar Pods untuk memverifikasi bahwa Redis Slave Pods sedang berjalan. Responsnya harus serupa dengan ini:
+   
    ![00](gambar/p13.PNG)
    
    

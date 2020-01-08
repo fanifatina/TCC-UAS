@@ -30,6 +30,7 @@ Kubernetes Pod adalah grup yang terdiri dari satu atau lebih Kontainer, diikat b
    ![00](gambar/5.PNG)
    
 2. Lihat Deployment, hasilnya akan mirip seperti ini :
+   
    ![00](gambar/6.PNG)
    
 3. Lihat Pod, hasilnya akan mirip seperti ini :
@@ -39,6 +40,7 @@ Kubernetes Pod adalah grup yang terdiri dari satu atau lebih Kontainer, diikat b
    ![00](gambar/8.PNG)
    
 5. Lihat kubectl
+   
    ![00](gambar/9.PNG)
    
    
@@ -58,7 +60,7 @@ Kubernetes Pod adalah grup yang terdiri dari satu atau lebih Kontainer, diikat b
 5. Hanya lingkungan Katacoda: Perhatikan nomor port 5 digit yang ditampilkan berlawanan dengan 8080 dalam output layanan. Nomor port ini dibuat secara acak dan bisa berbeda untuk Anda. Ketikkan nomor Anda di kotak teks nomor port, lalu klik Display Port. Menggunakan contoh dari sebelumnya, Anda akan mengetikkan 30369.
    ![00](gambar/13.PNG)
    
-Ini membuka jendela browser yang melayani aplikasi Anda dan menampilkan pesan "Hello World".
+   Ini membuka jendela browser yang melayani aplikasi Anda dan menampilkan pesan "Hello World".
    ![00](gambar/14.PNG)
 
 
